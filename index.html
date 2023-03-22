@@ -9,15 +9,24 @@
     <style>
         .divResultado {
             display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .divCard {
+            height: 400px;
+            width: 400px;
+            background-color: cadetblue;
         }
     </style>
 </head>
 <body>
     <div id="divPrincipal">
-        <div class="divResultado">
+        <div>
             <button onclick="buscarDados()">Buscar dados</button>
         </div>
-        <div id="divResultado">
+        <div id="divResultado" class="divResultado">
 
         </div>
     </div>
