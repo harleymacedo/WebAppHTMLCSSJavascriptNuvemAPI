@@ -28,9 +28,9 @@
                 const result = await fetch(url);
                 const dados = await result.json();
                 let divResultado = document.getElementById('divResultado');
-                dados.foreach( (dadoAtual) => {
-                    divResultado.innerHTML += `<div>${dadoAtual.nome}</div>`;
-                });
+                dados.forEach( (dadoAtual) => {
+                    divResultado.innerHTML += `<div class="divCard">${dadoAtual.nome}</div>`;
+                });                
             } catch (error) {
                 document.getElementById('divResultado').innerHTML = "Não foi possível carregar os dados";
             }
